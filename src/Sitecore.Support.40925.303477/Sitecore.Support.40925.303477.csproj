@@ -44,36 +44,47 @@
   <ItemGroup>
     <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions">
       <HintPath>..\..\lib\Microsoft.AspNetCore.Hosting.Abstractions.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
       <HintPath>..\..\lib\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.Extensions.Logging">
       <HintPath>..\..\lib\Microsoft.Extensions.Logging.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.Extensions.Logging.Abstractions">
       <HintPath>..\..\lib\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Framework.Common.Extensions">
       <HintPath>..\..\lib\Sitecore.Framework.Common.Extensions.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Framework.Conditions">
       <HintPath>..\..\lib\Sitecore.Framework.Conditions.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Framework.Eventing.Abstractions">
       <HintPath>..\..\lib\Sitecore.Framework.Eventing.Abstractions.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Framework.Publishing">
       <HintPath>..\..\lib\Sitecore.Framework.Publishing.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Framework.Publishing.Abstractions">
       <HintPath>..\..\lib\Sitecore.Framework.Publishing.Abstractions.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Framework.Publishing.Data">
       <HintPath>..\..\lib\Sitecore.Framework.Publishing.Data.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Framework.Publishing.Service.Abstractions">
       <HintPath>..\..\lib\Sitecore.Framework.Publishing.Service.Abstractions.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\packages\SC.Sitecore.Kernel.9.0.1\lib\Sitecore.Kernel.dll</HintPath>
@@ -83,12 +94,15 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Reactive.Core">
       <HintPath>..\..\lib\System.Reactive.Core.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Reactive.Interfaces">
       <HintPath>..\..\lib\System.Reactive.Interfaces.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Reactive.Linq">
       <HintPath>..\..\lib\System.Reactive.Linq.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Runtime" />
     <Reference Include="System.Web" />
