@@ -31,6 +31,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -41,25 +42,74 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions">
+      <HintPath>..\..\lib\Microsoft.AspNetCore.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+      <HintPath>..\..\lib\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging">
+      <HintPath>..\..\lib\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+      <HintPath>..\..\lib\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Framework.Common.Extensions">
+      <HintPath>..\..\lib\Sitecore.Framework.Common.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Framework.Conditions">
+      <HintPath>..\..\lib\Sitecore.Framework.Conditions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Framework.Eventing.Abstractions">
+      <HintPath>..\..\lib\Sitecore.Framework.Eventing.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Framework.Publishing">
+      <HintPath>..\..\lib\Sitecore.Framework.Publishing.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Framework.Publishing.Abstractions">
+      <HintPath>..\..\lib\Sitecore.Framework.Publishing.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Framework.Publishing.Data">
+      <HintPath>..\..\lib\Sitecore.Framework.Publishing.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Framework.Publishing.Service.Abstractions">
+      <HintPath>..\..\lib\Sitecore.Framework.Publishing.Service.Abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\packages\SC.Sitecore.Kernel.9.0.1\lib\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Reactive.Core">
+      <HintPath>..\..\lib\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>..\..\lib\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>..\..\lib\System.Reactive.Linq.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Framework\Publishing\ManifestCalculation\ContentAvailabilityVariantsProducer.cs" />
+    <Compile Include="Framework\Publishing\ManifestCalculation\SupportComparer.cs" />
+    <Compile Include="Framework\Publishing\ManifestCalculation\TargetProducers\DeferredItemsTargetProducer.cs" />
+    <Compile Include="Framework\Publishing\ManifestCalculation\TestingVariantsValidationTargetProducer.cs" />
+    <Compile Include="Framework\Publishing\ManifestCalculation\VariantsValidationTargetProducer.cs" />
+    <Compile Include="Framework\Publishing\PublishJobQueue\Handlers\IncrementalPublishHandler.cs" />
+    <Compile Include="Framework\Publishing\PublishJobQueue\Handlers\TreePublishHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_Config\Include\zzz\Sitecore.Support.40925.303477.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config\global\sc.Sitecore.Support.40925.303477.xml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
